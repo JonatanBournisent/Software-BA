@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="BrazosAbiertos.exe"/>
+    <OBJFILES value="BrazosAbiertos.obj uPrincipal.obj uAgregar_persona.obj uConsultar.obj 
+      uModificar.obj uAdminGP.obj uListas.obj uConfiguraciones.obj uCumples.obj"/>
+    <RESFILES value="BrazosAbiertos.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) uPrincipal.dfm uAgregar_persona.dfm uConsultar.dfm 
+      uModificar.dfm uAdminGP.dfm uListas.dfm uConfiguraciones.dfm uCumples.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="JvCtrlsC6R.lib JvCustomC6R.lib JvDlgsC6R.lib JvDBC6R.lib bcb2kaxserver.lib 
+      JvXPCtrlsC6R.lib JvPageCompsC6R.lib JvSystemC6R.lib JvStdCtrlsC6R.lib 
+      vclx.lib JclVcl.lib Jcl.lib JvCoreC6R.lib vcldb.lib dbexpress.lib 
+      dsnap.lib cds.lib ibxpress.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib ibxpress.lib cds.lib dsnap.lib dbexpress.lib 
+      vcldb.lib JvCoreC6R.lib Jcl.lib JclVcl.lib vclx.lib JvStdCtrlsC6R.lib 
+      JvSystemC6R.lib JvPageCompsC6R.lib JvXPCtrlsC6R.lib bcb2kaxserver.lib 
+      JvDBC6R.lib JvDlgsC6R.lib JvCustomC6R.lib JvCtrlsC6R.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi V_BM_Thread_60R.bpi Jcl.bpi JvAppFrmC6R.bpi 
+      JvCoreC6R.bpi JclVcl.bpi JvSystemC6R.bpi JvCtrlsC6R.bpi JvStdCtrlsC6R.bpi 
+      JvBandsC6R.bpi JvBDEC6R.bpi JvDlgsC6R.bpi JvDBC6R.bpi JvCmpC6R.bpi 
+      JvCryptC6R.bpi JvCustomC6R.bpi JvDockingC6R.bpi JvDotNetCtrlsC6R.bpi 
+      JvEDIC6R.bpi JvGlobusC6R.bpi JvHMIC6R.bpi JvInterpreterC6R.bpi 
+      JvJansC6R.bpi JvManagedThreadsC6R.bpi JvMMC6R.bpi JvNetC6R.bpi 
+      JvPageCompsC6R.bpi JvPluginC6R.bpi JvPrintPreviewC6R.bpi 
+      JvRuntimeDesignC6R.bpi JvTimeFrameworkC6R.bpi JvValidatorsC6R.bpi 
+      JvWizardC6R.bpi JvXPCtrlsC6R.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="BrazosAbiertos.cpp"/>
+    <INCLUDEPATH value="&quot;E:\Archivos de programa\Borland\CBuilder6\Projects&quot;;&quot;E:\Documents and Settings\Administrador\Escritorio\Brazos_Abiertos&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;E:\Archivos de programa\Borland\CBuilder6\Projects&quot;;&quot;E:\Documents and Settings\Administrador\Escritorio\Brazos_Abiertos&quot;;$(BCB)\jvcl_components\jvcl\lib\C6;$(BCB)\JVCL_C~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;E:\Archivos de programa\Borland\CBuilder6\Projects&quot; 
+      -I&quot;E:\Documents and Settings\Administrador\Escritorio\Brazos_Abiertos&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="BrazosAbiertos.res" FORMNAME="" UNITNAME="BrazosAbiertos.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BrazosAbiertos.cpp" FORMNAME="" UNITNAME="BrazosAbiertos" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uPrincipal.cpp" FORMNAME="fPrincipal" UNITNAME="uPrincipal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uAgregar_persona.cpp" FORMNAME="fAgregar_persona" UNITNAME="uAgregar_persona" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uConsultar.cpp" FORMNAME="fConsultar" UNITNAME="uConsultar" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uModificar.cpp" FORMNAME="fModificar" UNITNAME="uModificar" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uAdminGP.cpp" FORMNAME="fAdminGP" UNITNAME="uAdminGP" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uListas.cpp" FORMNAME="fListas" UNITNAME="uListas" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uConfiguraciones.cpp" FORMNAME="fConfiguraciones" UNITNAME="uConfiguraciones" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uCumples.cpp" FORMNAME="fCumples" UNITNAME="uCumples" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=11274
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
